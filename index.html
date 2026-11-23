@@ -3,356 +3,120 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Fam Ride: safe local rides in your town, by FamTap</title>
-<meta name="description" content="Fam Ride (Fam Ride): book a verified auto or e-rickshaw in your town from the FamTap app. Fare before you book, live driver on the map, start code, SOS and family sharing.">
-<meta property="og:title" content="Fam Ride: safe local rides, by FamTap">
-<meta property="og:description" content="Verified local drivers, fare before you book, live tracking, start code, SOS and family sharing. Book inside the FamTap app.">
-<meta name="theme-color" content="#4A3A86">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<title>FamTap: Privacy Policy and Terms</title>
 <style>
-  :root {
-    --ground: #4A3A86; --ground-2: #5A479A; --deep: #2A1F52; --accent: #F5B544; --accent-ink: #2A1F52;
-    --bg: #FFFFFF; --soft: #F5F2FC; --fg: #1F1A33; --muted: #5C5670; --line: #E4DFF2; --card: #FFFFFF;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root:not([data-theme="light"]) { --bg: #14111F; --soft: #1D1830; --fg: #EEEAF8; --muted: #B3ABCB; --line: #2F2848; --card: #1B1630; }
-  }
-  * { box-sizing: border-box; }
-  html { scroll-behavior: smooth; }
-  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 Inter, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-  a { color: inherit; }
-  h1, h2, h3 { font-family: "Baloo 2", system-ui, sans-serif; line-height: 1.1; margin: 0; }
-  .wrap { max-width: 1080px; margin: 0 auto; padding: 0 16px; }
-  .icon { width: 28px; height: 28px; flex: none; stroke: currentColor; fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-
-  /* Top bar */
-  .top { background: var(--ground); color: #fff; }
-  .top .wrap { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 64px; flex-wrap: wrap; padding-top: 8px; padding-bottom: 8px; }
-  .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; }
-  .brand-mark { width: 40px; height: 40px; border-radius: 12px; background: #fff; display: grid; place-items: center; color: var(--ground); }
-  .brand b { font-family: "Baloo 2", sans-serif; font-size: 1.5rem; font-weight: 800; }
-  .brand small { display: block; font-size: .78rem; opacity: .85; margin-top: -4px; }
-  .top nav { display: flex; gap: 6px; flex-wrap: wrap; }
-  .top nav a { text-decoration: none; padding: 8px 12px; border-radius: 999px; font-weight: 500; font-size: .95rem; }
-  .top nav a:hover { background: rgba(255,255,255,.14); }
-
-  /* Hero */
-  .hero { background: var(--ground); color: #fff; position: relative; overflow: hidden; padding: 40px 0 64px; }
-  .hero::before { content: ""; position: absolute; width: 520px; height: 520px; border-radius: 50%; background: #7B66B8; right: -200px; top: -220px; }
-  .hero::after { content: ""; position: absolute; width: 170px; height: 170px; border-radius: 50%; background: var(--accent); right: 8%; top: 40px; opacity: .95; }
-  .hero .wrap { position: relative; z-index: 1; display: grid; grid-template-columns: 1.3fr 1fr; gap: 40px; align-items: center; }
-  .pill { display: inline-block; padding: 6px 14px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-weight: 600; font-size: .85rem; letter-spacing: .06em; }
-  .hero h1 { font-size: clamp(2.6rem, 6vw, 4.4rem); font-weight: 800; margin: 18px 0 12px; }
-  .hero h1 span { color: var(--accent); }
-  .hero p.lead { font-size: 1.2rem; color: #E9E3FF; margin: 0 0 8px; max-width: 34rem; }
-  .hero p.hi { font-size: 1.05rem; color: #D7CEF9; margin: 0 0 26px; }
-  .cta-row { display: flex; gap: 12px; flex-wrap: wrap; align-items: center; }
-  .btn { display: inline-flex; align-items: center; gap: 10px; min-height: 52px; padding: 12px 22px; border-radius: 14px; font-weight: 600; text-decoration: none; }
-  .btn-primary { background: #fff; color: var(--deep); }
-  .btn-ghost { border: 2px solid rgba(255,255,255,.6); color: #fff; }
-  .btn:hover { filter: brightness(.95); }
-  .town { margin-top: 22px; display: flex; align-items: center; gap: 10px; color: #E9E3FF; font-size: .98rem; }
-
-  .phone { justify-self: center; width: 280px; border-radius: 40px; background: var(--deep); border: 10px solid #1C1440; padding: 22px 16px; color: #fff; box-shadow: 0 30px 60px rgba(0,0,0,.25); }
-  .phone .bubble { background: #fff; color: var(--deep); border-radius: 18px 18px 4px 18px; padding: 10px 14px; font-weight: 600; margin-left: auto; width: fit-content; max-width: 90%; font-size: .95rem; }
-  .phone .bot { background: var(--ground-2); color: #fff; border-radius: 18px 18px 18px 4px; padding: 10px 14px; margin: 12px 0; width: fit-content; max-width: 92%; font-size: .92rem; }
-  .phone .driver { background: #fff; color: var(--deep); border-radius: 18px; padding: 14px; margin-top: 12px; }
-  .phone .driver b { display: block; font-size: 1rem; }
-  .plate { display: inline-block; background: #F7D046; color: #1d1d1d; border: 2px solid #1d1d1d; border-radius: 6px; padding: 1px 8px; font-weight: 700; font-size: .82rem; margin-top: 6px; letter-spacing: .04em; }
-  .eta { margin-top: 10px; font-weight: 600; color: var(--ground); font-size: .9rem; }
-  .code { display: flex; gap: 6px; margin-top: 10px; }
-  .code span { width: 34px; height: 40px; border-radius: 8px; background: var(--soft); display: grid; place-items: center; font-weight: 800; font-size: 1.1rem; color: var(--deep); }
-
-  /* Sections */
-  section { padding: 64px 0; }
-  section.alt { background: var(--soft); }
-  .kicker { color: var(--ground); font-weight: 600; letter-spacing: .08em; font-size: .85rem; text-transform: uppercase; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .kicker { color: var(--accent); } }
-  h2 { font-size: clamp(2rem, 4vw, 2.8rem); font-weight: 800; margin: 6px 0 10px; }
-  .sub { color: var(--muted); max-width: 44rem; margin: 0 0 32px; }
-  .grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; }
-  .card { background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px; }
-  .card h3 { font-size: 1.3rem; font-weight: 700; margin: 12px 0 6px; }
-  .card p { margin: 0; color: var(--muted); font-size: .97rem; }
-  .card .icon { color: var(--ground); width: 34px; height: 34px; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .card .icon { color: var(--accent); } }
-
-  .steps { counter-reset: s; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; padding: 0; margin: 0; list-style: none; }
-  .steps li { counter-increment: s; background: var(--card); border: 1px solid var(--line); border-radius: 20px; padding: 22px; }
-  .steps li::before { content: counter(s); display: grid; place-items: center; width: 40px; height: 40px; border-radius: 50%; background: var(--accent); color: var(--accent-ink); font-weight: 800; font-family: "Baloo 2", sans-serif; font-size: 1.3rem; margin-bottom: 12px; }
-  .steps b { display: block; font-size: 1.08rem; margin-bottom: 4px; }
-  .steps span { color: var(--muted); font-size: .96rem; }
-  .say { display: inline-block; margin-top: 8px; background: var(--soft); border-radius: 10px; padding: 4px 10px; font-weight: 600; font-size: .9rem; }
-
-  .split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-  .list { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
-  .list li { display: flex; gap: 14px; align-items: flex-start; }
-  .list li .icon { color: var(--ground); margin-top: 2px; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .list li .icon { color: var(--accent); } }
-  .list b { display: block; }
-  .list span { color: var(--muted); font-size: .96rem; }
-
-  .driver-band { background: var(--deep); color: #fff; border-radius: 28px; padding: 36px; display: grid; grid-template-columns: 1.4fr 1fr; gap: 28px; align-items: center; }
-  .driver-band h2 { color: #fff; }
-  .driver-band .sub { color: #D7CEF9; }
-  .driver-band .list span { color: #CFC6EC; }
-  .driver-band .list li .icon { color: var(--accent); }
-  .docs { background: rgba(255,255,255,.08); border-radius: 20px; padding: 22px; }
-  .docs b { display: block; margin-bottom: 10px; }
-  .docs ol { margin: 0; padding-left: 20px; color: #E9E3FF; }
-
-  .parent { display: grid; grid-template-columns: auto 1fr; gap: 24px; align-items: center; }
-  .parent .brand-mark { width: 88px; height: 88px; border-radius: 26px; background: var(--ground); color: #fff; }
-  .chips { display: flex; flex-wrap: wrap; gap: 8px; margin: 14px 0 18px; }
-  .chips span { background: var(--card); border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; font-size: .92rem; }
-  .text-link { color: var(--ground); font-weight: 600; }
-  @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .text-link { color: var(--accent); } }
-
-  .download { background: var(--ground); color: #fff; border-radius: 28px; padding: 36px; display: grid; grid-template-columns: 1fr auto; gap: 28px; align-items: center; }
-  .download h2 { color: #fff; }
-  .download .sub { color: #E9E3FF; margin-bottom: 20px; }
-  .qr { background: #fff; border-radius: 20px; padding: 14px; text-align: center; color: var(--deep); font-weight: 600; font-size: .9rem; }
-  .qr img { display: block; width: 180px; height: 180px; }
-
-  details { background: var(--card); border: 1px solid var(--line); border-radius: 16px; padding: 16px 20px; }
-  details + details { margin-top: 12px; }
-  summary { cursor: pointer; font-weight: 600; }
-  details p { color: var(--muted); margin: 10px 0 0; }
-
-  footer { background: var(--deep); color: #D7CEF9; padding: 36px 0; font-size: .95rem; }
-  footer .wrap { display: flex; justify-content: space-between; gap: 18px; flex-wrap: wrap; }
-  footer a { color: #fff; }
-  footer nav { display: flex; gap: 16px; flex-wrap: wrap; }
-
-  @media (max-width: 900px) {
-    .hero .wrap, .split, .driver-band, .download, .parent { grid-template-columns: 1fr; }
-    .grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .steps { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-    .qr { justify-self: start; }
-  }
-  @media (max-width: 560px) {
-    .grid, .steps { grid-template-columns: 1fr; }
-    .hero { padding-top: 24px; }
-    .hero::after { display: none; }
-    .driver-band, .download { padding: 24px; border-radius: 22px; }
-    .top nav a { padding: 6px 10px; font-size: .9rem; }
-  }
+  :root { color-scheme: light dark; --fg: #1d2733; --muted: #5b6673; --line: #d9dee5; --accent: #0a6cff; --bg: #ffffff; --soft: #f3f6fa; }
+  @media (prefers-color-scheme: dark) { :root { --fg: #e6ebf1; --muted: #a3adb9; --line: #33404d; --accent: #5aa2ff; --bg: #12181f; --soft: #1b232c; } }
+  body { margin: 0; background: var(--bg); color: var(--fg); font: 17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
+  header { background: linear-gradient(135deg, #00c6ff, #0066ff); color: #fff; padding: 28px 16px; }
+  header div, main { max-width: 760px; margin: 0 auto; }
+  header h1 { margin: 0 0 4px; font-size: 1.7rem; }
+  nav { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 14px; }
+  nav a { color: #fff; background: rgba(255,255,255,.18); padding: 6px 14px; border-radius: 18px; text-decoration: none; font-weight: 600; }
+  main { padding: 8px 16px 48px; }
+  h2 { margin-top: 2.2rem; font-size: 1.5rem; border-bottom: 2px solid var(--line); padding-bottom: 6px; }
+  h3 { margin-top: 1.8rem; font-size: 1.2rem; }
+  h4 { margin-top: 1.4rem; font-size: 1.05rem; }
+  a { color: var(--accent); }
+  .table { overflow-x: auto; }
+  table { border-collapse: collapse; width: 100%; margin: 12px 0; font-size: .95rem; }
+  th, td { border: 1px solid var(--line); padding: 8px 10px; text-align: left; vertical-align: top; }
+  th { background: var(--soft); }
+  code { background: var(--soft); padding: 1px 5px; border-radius: 4px; }
+  #delete-account { scroll-margin-top: 12px; }
 </style>
 </head>
 <body>
-
-<header class="top">
-  <div class="wrap">
-    <a class="brand" href="#top" aria-label="Fam Ride home">
-      <span class="brand-mark" aria-hidden="true">
-        <svg class="icon" viewBox="0 0 24 24"><path d="M5 17h14M6 17l1.5-6h9L18 17M8 11l1-3h6l1 3"/><circle cx="8" cy="18" r="1.6"/><circle cx="16" cy="18" r="1.6"/></svg>
-      </span>
-      <span><b>Fam Ride</b><small>by FamTap</small></span>
-    </a>
-    <nav aria-label="Sections">
-      <a href="#how">How it works</a>
-      <a href="#safety">Safety</a>
-      <a href="#drivers">For drivers</a>
-      <a href="../">FamTap app</a>
-    </nav>
-  </div>
-</header>
-
-<main id="top">
-  <section class="hero">
-    <div class="wrap">
-      <div>
-        <span class="pill">NOW IN JAMALPUR &amp; MUNGER</span>
-        <h1>Safe local rides, <span>one tap away.</span></h1>
-        <p class="lead">Book a verified auto or e-rickshaw in your town, see the fare before you book, and let your family follow the ride. Right inside the FamTap app.</p>
-        <p class="hi" lang="hi">अपने शहर में भरोसेमंद ऑटो और ई-रिक्शा। बस बोलिए "बस स्टैंड से अस्पताल", Fam Ride बुक कर देगा।</p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.idealoom.famtap.app">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Get FamTap on Google Play</a>
-          <a class="btn btn-ghost" href="#how">How it works</a>
-        </div>
-        <p class="town"><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><span>Open FamTap and tap <b>Fam Ride</b> in your chat list. More towns coming soon.</span></p>
-      </div>
-      <div class="phone" aria-hidden="true">
-        <div class="bubble">“Bus stand se Sadar Hospital”</div>
-        <div class="bot">Auto · ₹40 · ⏱ 4 min away. Book this ride?</div>
-        <div class="driver">
-          <b>Ramesh is coming ✓ Verified</b>
-          <span class="plate">BR08 AU 1234</span>
-          <div class="eta">⏱ Arriving in about 3 min · 0.8 km away</div>
-          <div class="code"><span>4</span><span>8</span><span>2</span><span>7</span></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="features">
-    <div class="wrap">
-      <div class="kicker">Why Fam Ride</div>
-      <h2>Made for small towns and families</h2>
-      <p class="sub">Where the big ride apps don't come, Fam Ride brings known, verified local drivers, simple booking in Hindi or English, and safety that keeps your family in the loop.</p>
-      <div class="grid">
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z"/><path d="M9 12l2 2 4-4"/></svg>
-          <h3>Verified drivers</h3>
-          <p>Only yellow-plate vehicles. Every driver's licence, RC, insurance, permit and ID are checked by FamTap before they can take rides.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 9h6M9 12h6M11 9c2 0 2 6 0 6l3 3"/></svg>
-          <h3>Fare before you book</h3>
-          <p>See the exact fare by distance before you confirm. No surge pricing, no bargaining. Pay by UPI QR or cash.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 11a7 7 0 0 0 14 0M12 18v4"/></svg>
-          <h3>Just say where</h3>
-          <p>Speak or type in Hindi or English: "mujhe Munger Fort jaana hai" or "bus stand se hospital". Or pick any spot on the map.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
-          <h3>Know when it comes</h3>
-          <p>See how many minutes away a vehicle is before you book, and watch your driver arrive live on Google Maps.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><circle cx="17" cy="9" r="2.5"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6M15 20c0-2.2 1.3-4 3.5-4S21 17.8 21 20"/></svg>
-          <h3>Book for family</h3>
-          <p>Book a ride for Nani or your child from anywhere. The driver picks up the person riding, and you follow the trip.</p>
-        </div>
-        <div class="card">
-          <svg class="icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg>
-          <h3>Now or later</h3>
-          <p>Ride right away, or book from 10 minutes to a week ahead. Your rides of the last 30 days are in "My rides".</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="how" class="alt">
-    <div class="wrap">
-      <div class="kicker">How it works</div>
-      <h2>Book in four simple steps</h2>
-      <p class="sub">Booking is a short chat. Every answer stays on screen, and you can tap any answer to change it.</p>
-      <ol class="steps">
-        <li><b>Where from, where to</b><span>Use your current location, choose on the map, search a place, or just say it.</span><br><span class="say">“Station se Munger Fort”</span></li>
-        <li><b>When and who</b><span>Now or later, for you or someone else.</span></li>
-        <li><b>Pick a vehicle</b><span>Auto or e-rickshaw, each with its fare and how many minutes away it is.</span></li>
-        <li><b>Confirm and ride</b><span>A nearby driver accepts. Give them your 4-digit start code when you get in.</span></li>
-      </ol>
-    </div>
-  </section>
-
-  <section id="safety">
-    <div class="wrap split">
-      <div>
-        <div class="kicker">Safety first</div>
-        <h2>Your family rides with you</h2>
-        <p class="sub">Fam Ride is part of FamTap, the family app, so safety is built around the people who care about you.</p>
-      </div>
-      <ul class="list">
-        <li><svg class="icon" viewBox="0 0 24 24"><rect x="4" y="10" width="16" height="11" rx="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3"/></svg><div><b>4-digit start code</b><span>The trip starts only when the driver enters your code, so the right person is in the right vehicle.</span></div></li>
-        <li><svg class="icon" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20c0-3.3 2.7-6 6-6s6 2.7 6 6"/><path d="M16 11l2 2 4-4"/></svg><div><b>Share with family</b><span>Up to 5 family members see the ride live: driver, number plate and where they are.</span></div></li>
-        <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l9 16H3L12 3z"/><path d="M12 10v4M12 17h.01"/></svg><div><b>SOS in one tap</b><span>Calls 112 and alerts your family at once, even if their app is closed.</span></div></li>
-        <li><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="12" rx="2"/><circle cx="9" cy="12" r="2.5"/><path d="M14 10h4M14 14h3"/></svg><div><b>Know your driver</b><span>Photo, name, Verified badge, rating, yellow plate and driver code before they arrive.</span></div></li>
-        <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg><div><b>Help the driver find you</b><span>Share your live location with the driver until pickup, and chat or call them in the app.</span></div></li>
-        <li><svg class="icon" viewBox="0 0 24 24"><path d="M12 3l7 3v6c0 4.5-3 7.8-7 9-4-1.2-7-4.5-7-9V6l7-3z"/></svg><div><b>Private by design</b><span>Phone numbers are shown only after a driver accepts, and only for that ride. Addresses from your rides are deleted after 30 days.</span></div></li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="drivers" class="alt">
-    <div class="wrap">
-      <div class="driver-band">
-        <div>
-          <div class="kicker" style="color:var(--accent)">For drivers</div>
-          <h2>Drive with Fam Ride</h2>
-          <p class="sub">Own a yellow-plate auto or e-rickshaw? Get rides from people in your town, straight on your phone.</p>
-          <ul class="list">
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M18 8a6 6 0 1 0-12 0c0 7-3 9-3 9h18s-3-2-3-9M13.7 21a2 2 0 0 1-3.4 0"/></svg><div><b>Loud new-ride alert</b><span>A ride request rings even when your phone is on vibrate, so you never miss a ride.</span></div></li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M3 11l18-8-8 18-2-8-8-2z"/></svg><div><b>One-tap navigation</b><span>Navigate to the pickup, to the rider and to the drop in the Google Maps app.</span></div></li>
-            <li><svg class="icon" viewBox="0 0 24 24"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg><div><b>Clear earnings</b><span>See your fares, earnings and FamTap's commission for the month in the app. QR payments are paid out to you daily.</span></div></li>
-            <li><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><div><b>Your time, your choice</b><span>Go online when you want. Skip a request or accept it.</span></div></li>
-          </ul>
-        </div>
-        <div class="docs">
-          <b>How to join</b>
-          <p style="margin:0 0 10px;color:#E9E3FF">In FamTap: <b style="display:inline">Settings → Become a driver</b>. Add your vehicle details and photos of:</p>
-          <ol>
-            <li>Your photo</li>
-            <li>Driving licence</li>
-            <li>RC (registration)</li>
-            <li>Insurance</li>
-            <li>Permit</li>
-            <li>ID proof</li>
-            <li>Vehicle with yellow plate</li>
-          </ol>
-          <p style="margin:12px 0 0;color:#E9E3FF">FamTap checks your documents and approves you. Then <b style="display:inline">Fam Ride Driver</b> appears in your chat list.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="famtap">
-    <div class="wrap parent">
-      <span class="brand-mark" aria-hidden="true">
-        <svg viewBox="0 0 24 24" width="48" height="48" fill="none" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 8.6 8.6 0 0 1-3.8-.9L3 20l1.1-4.2A8.4 8.4 0 1 1 21 11.5z"/><path d="M8.5 12.5c1 1.6 2.2 2.4 3.5 2.4s2.5-.8 3.5-2.4"/></svg>
-      </span>
-      <div>
-        <div class="kicker">Part of FamTap</div>
-        <h2>One app for your whole family</h2>
-        <p class="sub" style="margin-bottom:0">Fam Ride lives inside <b>FamTap: Family Chat &amp; Calls</b>. One download gives you rides and everything else your family needs to stay close.</p>
-        <div class="chips">
-          <span>Chats &amp; photos</span><span>Voice &amp; video calls</span><span>“Call Mom” by voice</span><span>Family can help on your phone</span><span>Status updates</span><span>End-to-end encrypted</span><span>No ads</span>
-        </div>
-        <a class="text-link" href="../">Visit the FamTap website →</a>
-      </div>
-    </div>
-  </section>
-
-  <section id="download" class="alt">
-    <div class="wrap">
-      <div class="download">
-        <div>
-          <h2>Get Fam Ride in the FamTap app</h2>
-          <p class="sub">Free on Google Play for Android. Open FamTap, tap <b>Fam Ride</b> and book your first ride.</p>
-          <a class="btn btn-primary" href="https://play.google.com/store/apps/details?id=com.idealoom.famtap.app">
-            <svg class="icon" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>Download free on Google Play</a>
-        </div>
-        <div class="qr">
-          <img src="playstore-qr.svg" alt="QR code to download FamTap from Google Play" width="180" height="180">
-          Scan to download
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="faq">
-    <div class="wrap">
-      <div class="kicker">Questions</div>
-      <h2 style="margin-bottom:24px">Good to know</h2>
-      <details><summary>Where does Fam Ride work?</summary><p>Fam Ride has started in Jamalpur and Munger (Bihar), with more towns coming. When you open Fam Ride, the app checks if you are inside a Fam Ride town.</p></details>
-      <details><summary>How do I pay?</summary><p>At the end of the trip, scan the Fam Ride QR on the driver's phone with any UPI app, or pay cash to the driver. The fare is fixed when you book.</p></details>
-      <details><summary>Do I need a separate app?</summary><p>No. Fam Ride is inside the FamTap app. Install FamTap from Google Play and tap Fam Ride in your chat list.</p></details>
-      <details><summary>Can I book for someone else?</summary><p>Yes. Choose "someone else", enter their name and phone number, and the driver picks them up. You can share the ride with family so everyone can follow it.</p></details>
-      <details><summary>Is my location shared all the time?</summary><p>No. Your location is used when you choose it for pickup, and shared with the driver only if you turn on "Share my live location", until pickup. The driver's location is shared during your ride.</p></details>
-      <details><summary>Is Fam Ride on iPhone?</summary><p>Not yet. FamTap and Fam Ride are on Android today. An iPhone version is planned.</p></details>
-    </div>
-  </section>
+<header><div>
+  <h1>FamTap</h1>
+  <div>Simple chats, calls and remote help for the whole family.</div>
+  <nav><a href="#privacy">Privacy Policy</a><a href="#terms">Terms of Use</a><a href="#delete-account">Delete your account</a></nav>
+</div></header>
+<main>
+<section id="privacy">
+<h2 id="privacy-famtap-privacy-policy">FamTap Privacy Policy</h2>
+<p><strong>App:</strong> FamTap (Android, package <code>com.idealoom.famtap.app</code>)<br><strong>Provided by:</strong> Abhinav Kumar, Bengaluru, India<br><strong>Contact:</strong> <a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a><br><strong>Effective date:</strong> 23 November 2026</p>
+<p>This policy explains what information FamTap collects, why, who it is shared with, how long it is kept, and how you can delete it. If anything here is unclear, write to us at <a href="mailto:famtap.help@gmail.com.">famtap.help@gmail.com.</a></p>
+<h3 id="privacy-what-the-app-does">1. What the app does</h3>
+<p>FamTap lets families stay in touch simply: send messages, photos, videos, voice notes, documents, contacts and your location; make voice and video calls; post status updates that disappear after 24 hours; give voice commands such as "Call Mom" or "Message Gaurav"; and, if you choose, let someone you trust see and tap your screen to help you. In some towns, Fam Ride also lets you book a local auto or e-rickshaw for yourself or your family.</p>
+<h3 id="privacy-information-we-collect">2. Information we collect</h3>
+<h4 id="privacy-information-you-give-us">Information you give us</h4>
+<div class="table"><table><thead><tr><th>Information</th><th>Why we need it</th></tr></thead><tbody><tr><td><strong>Your phone number</strong></td><td>To create your account and sign you in. We confirm it is yours by sending a code by SMS. One number can be signed in on one phone at a time.</td></tr><tr><td><strong>Your name</strong> and, if you add one, a short <strong>"About" line</strong></td><td>Shown to people you chat with; your name is shown next to your number to people who have not saved it.</td></tr><tr><td><strong>Messages and attachments you send</strong> (text, photos, videos, voice notes, documents, contact cards, locations), <strong>in encrypted form that we cannot read</strong></td><td>To deliver them to the people you send them to.</td></tr><tr><td><strong>Status updates</strong> (photos and videos), <strong>in encrypted form that we cannot read</strong></td><td>To show them to your contacts for 24 hours. Who viewed and liked an update is shown only to the person who posted it.</td></tr><tr><td><strong>Your profile photo</strong> and <strong>group photos</strong>, if you set one</td><td>Shown to the people you chat with and to members of your groups, like the profile photo in other messaging apps. They are stored on our server <strong>without end-to-end encryption</strong>, and only those people can download them.</td></tr><tr><td><strong>Who you message or call, and when</strong></td><td>We need this to deliver messages and calls. We cannot see what they say.</td></tr><tr><td><strong>Your public encryption key</strong></td><td>So other people's phones can encrypt messages that only your phone can open. The matching private key never leaves your phone.</td></tr><tr><td><strong>Reports you file</strong></td><td>If you report someone, your phone sends us your report, the reason you chose and the last 5 messages that person sent you in that chat, so we can review it. This is the only time we can read any message.</td></tr><tr><td><strong>Your block list and privacy settings</strong> (for example, hiding your "last seen")</td><td>So they work.</td></tr></tbody></table></div>
+<h4 id="privacy-information-from-your-phone-with-your-permission">Information from your phone, with your permission</h4>
+<div class="table"><table><thead><tr><th>Permission</th><th>What we do with it</th><th>What we do not do</th></tr></thead><tbody><tr><td><strong>Contacts</strong></td><td>The phone numbers in your contacts are sent to our server to find which of them use FamTap. Saved names are used on your phone to show people by the name you gave them. If you tap "Add to contacts", a number is saved to your phone's contacts. When you say a name to Push to talk ("Call Gaurav"), it is matched against your contacts <strong>on your phone</strong>, so you can also call people who are not on FamTap.</td><td>We do not store your contacts on our server. Contact names never leave your phone.</td></tr><tr><td><strong>Phone calls</strong> (optional)</td><td>Only when Push to talk finds someone who is not on FamTap and <strong>you say yes</strong>: FamTap starts a normal phone call to that number through your phone (your usual call charges apply). If you do not allow it, your phone's dialer opens with the number instead.</td><td>We do not read your call log, and we do not make calls without asking you.</td></tr><tr><td><strong>Display over other apps</strong> (Fam Ride drivers, optional)</td><td>While you are online as a driver: a new ride request can show as a full-screen card over other apps, and a small FamTap icon stays on your home screen to open the app.</td><td>Nothing is shown when you are offline, and it collects nothing.</td></tr><tr><td><strong>Microphone</strong></td><td>Calls, voice notes, and voice commands (Push to talk). Asked for the first time you need it.</td><td>We do not listen when you are not on a call, recording, or holding the Push to talk button.</td></tr><tr><td><strong>Speech recognition</strong> (Push to talk)</td><td>While you hold the button, your phone's speech service (provided by Google on most Android phones) turns your words into text, which FamTap uses only to find the person and action you asked for.</td><td>FamTap does not store or send your voice commands to our server.</td></tr><tr><td><strong>Camera</strong></td><td>Video calls, taking photos and videos to send, and during Remote control on the helper's phone (see below).</td><td>We do not use it at any other time.</td></tr><tr><td><strong>Location</strong> (precise)</td><td>Only when you tap "Share location" in a chat: your current position is found once and sent, end-to-end encrypted, to that chat.</td><td>We do not track your location, update it in the background, or receive it in a readable form.</td></tr><tr><td><strong>Screen sharing</strong></td><td>If you share your screen in a call or in a Remote control session, pictures of your screen are sent, end-to-end encrypted, to the one person you allowed, while it lasts. Android asks you each time.</td><td>We do not record or keep them.</td></tr><tr><td><strong>Accessibility</strong> (optional)</td><td>Used only during a Remote control session you started and allowed: to perform the taps your helper makes, and to show a red "Remote control on" label with your helper's live camera picture on top of your screen.</td><td>It does not read your screen or what you type, and it collects nothing. It is switched off again when the session ends.</td></tr><tr><td><strong>Notifications</strong></td><td>Messages, incoming calls (including a full-screen ringing screen), and a notice while your screen is shared or controlled, with a Stop button.</td><td></td></tr></tbody></table></div>
+<h4 id="privacy-remote-control-the-helper-s-camera">Remote control: the helper's camera</h4>
+<p>For your safety, while someone controls your phone, the <strong>helper's front camera</strong> sends a small picture of their face to your phone about twice a second, end-to-end encrypted, so you can always see who is in control. If their face stops arriving, they can no longer see or tap your screen. These pictures are not stored by us or kept on either phone.</p>
+<h4 id="privacy-fam-ride-only-in-towns-where-it-runs">Fam Ride (only in towns where it runs)</h4>
+<p>Fam Ride lets you book a local auto or e-rickshaw at a fixed fare, follow a family member's ride, or drive for Fam Ride. It appears only in towns where it runs, and only these parts of FamTap use the information below.</p>
+<div class="table"><table><thead><tr><th>Information</th><th>When and why</th><th>What we do not do</th></tr></thead><tbody><tr><td><strong>Your approximate location</strong> (city level)</td><td>Only after you tap <strong>"Check my city"</strong>: your phone's approximate position, rounded to about 1 km, is sent once to check whether Fam Ride runs where you are. If you allowed it, the app checks again quietly when you open it (at most every 10 minutes), so Ride appears or disappears as you travel. Your phone remembers only "inside" or "outside" and the town name.</td><td>We do not store this position. We do not ask for it before you tap the button.</td></tr><tr><td><strong>Your exact pickup spot</strong> (precise location)</td><td>Only if you tap <strong>"Use my current location"</strong> while booking: found once and sent with the booking, so the driver can find you.</td><td>We do not use it at any other time.</td></tr><tr><td><strong>Where you are waiting</strong> (precise, live location)</td><td>Only if you tap <strong>"Share my live location with the driver"</strong> while your driver is coming: sent to that driver only, so they can find you. It stops when your trip starts, when you tap Stop sharing, or when the ride is cancelled or given back.</td><td>Not stored with your ride; not shown to anyone else.</td></tr><tr><td><strong>Your booking</strong></td><td>Pickup and drop places, time, vehicle, fare, any pickup directions you type, and, if you book for someone else, their name and phone number. Sent to the driver who accepts it, so they can pick the person up.</td><td></td></tr><tr><td><strong>Places you save</strong> ("Beti ka ghar")</td><td>The name you give and the landmark it is near, so you can book faster.</td><td></td></tr><tr><td><strong>Family who follow your ride</strong></td><td>If you share a ride with people you chat with, they get a notification and see the trip, the driver's details and the driver's live position until it ends, and are alerted if you press SOS.</td><td></td></tr><tr><td><strong>Live location link</strong></td><td>If you tap "Share live location link", you get a private web link to send by SMS or any other app. <strong>Anyone who has the link</strong> can open it in a browser, without FamTap, and see your first name, the pickup and drop, the driver's name, vehicle, number plate and rating, and the driver's live position until the ride ends. It never shows phone numbers, your start code or your chat. It stops working 6 hours after the ride ends.</td><td>Only send it to people you trust.</td></tr><tr><td><strong>Calls with your driver or rider</strong></td><td>During a ride, you and your driver call each other inside FamTap (like any FamTap call). Your phone number is not shown to them, and theirs is not shown to you.</td><td>We do not give your number to drivers or riders.</td></tr><tr><td><strong>First-ride offer</strong></td><td>If you apply an offer code (for example a free first ride up to ₹50), the discount is saved with your booking and shown to your driver. To keep the offer to one per person, we check whether your account has finished a ride; and if you delete your account after finishing a ride, we keep a <strong>one-way code made from your phone number</strong> - it cannot be turned back into the number - so a new account on the same number does not get the offer again.</td><td>We do not keep your phone number for this.</td></tr><tr><td><strong>Chat with your driver</strong></td><td>Messages you and your driver send each other during a ride, including a <strong>location you share</strong> there (your position at that moment, which the other person can open in Google Maps), are stored on our server <strong>without end-to-end encryption</strong>, with the trip, so they can be read if there is a complaint or a safety problem. <strong>Voice messages</strong> in this chat are kept only while the ride is on and are <strong>deleted when it ends</strong> (or when a driver gives the ride back); only you and your driver can play them. Your family does not see the chat.</td><td>They are not used for anything else.</td></tr><tr><td><strong>Why you cancelled</strong></td><td>If you cancel a ride, the reason you choose (for example "Taking longer than expected") and any words you add for "Others" are kept with the trip. Fam Ride's operator and partners see the reasons, and the driver's name if they had accepted, to improve the service.</td><td>The driver is not shown your reason.</td></tr><tr><td><strong>Extra you add to the fare</strong></td><td>If you add more to the fare while a driver is being found (₹10 to ₹100), the amount is kept with the trip and shown to drivers; all of it goes to the driver.</td><td></td></tr><tr><td><strong>When no driver is found</strong></td><td>If the app tells you "No driver found", we record when it happened, the pickup (the landmark, or your map pin rounded to about 100 m), the vehicle, and how far the nearest free driver was, so Fam Ride can find drivers for those places and times. Fam Ride's partners see these records without your name; only Fam Ride's operator sees who it was, to call you back.</td><td>We do not record your location at any other time.</td></tr><tr><td><strong>SOS</strong></td><td>Pressing SOS opens your phone's dialer with the emergency number and alerts the family following the ride.</td><td></td></tr><tr><td><strong>Ratings</strong></td><td>The stars you give a driver, shown to others as the driver's average.</td><td></td></tr><tr><td><strong>Payments</strong></td><td>You pay the fare in cash to the driver, or by scanning Fam Ride's QR code with your own UPI app, which sends the money to Fam Ride's bank account. Like any bank, ours shows us the payer's name, the amount and a UPI reference number for each payment received. We use the reference (the driver may type its last 4 digits from your payment screen) only to confirm which ride was paid and to pay the driver their share.</td><td>We never see your UPI PIN, bank account or card details. We keep only the reference of a matched payment, not the payer's name.</td></tr></tbody></table></div>
+<p><strong>If you drive for Fam Ride</strong>, we also collect:</p>
+<div class="table"><table><thead><tr><th>Information</th><th>Why</th></tr></thead><tbody><tr><td><strong>Vehicle type and number, licence number, and your UPI ID</strong></td><td>To check you, show riders your vehicle, and pay your share of fares to you.</td></tr><tr><td><strong>Photos of your documents</strong>: your photo, driving licence, vehicle RC, insurance, permit, ID and vehicle</td><td>To verify you before you can take rides. Only Fam Ride's operator and its partners who approve drivers see them (with your name, phone number, vehicle and licence details), except your photo, which riders see on your driver card.</td></tr><tr><td><strong>Your driver code</strong> (for example RAMESH01)</td><td>Shown to riders and used in our records, so everyone knows which driver it was.</td></tr><tr><td><strong>Your live position (precise location)</strong></td><td>On your way to a rider and during the trip, while the Fam Ride Driver screen is open: sent to the rider and the family following the ride. While you are <strong>online and free</strong> and FamTap is open (on any screen), about every 30 seconds to our server only, so ride requests can be sent to the nearest drivers and riders can see how many minutes away the nearest driver is - riders never see your position, only the minutes. Only your <strong>latest</strong> position is kept (no history), so a server restart does not take you off the map; it is <strong>deleted when you go offline</strong>, are no longer a driver, or delete your account. It is not collected when you are offline or when the app is closed.</td></tr><tr><td><strong>How you use Fam Ride Driver</strong></td><td>While you are a driver: when you go online and for how long, how you answered ride requests (accepted, skipped, not answered), wrong start codes, rides given back, and, from the app, which ride features you used (for example "listened to the ride in Hindi" or "called the rider") and problems on the phone (for example location or "Display over other apps" switched off). Shown to Fam Ride's operator and partners, with your rides, fares and ratings, so we can help drivers and improve the service. Counts and short notes only, never your position or messages.</td></tr><tr><td><strong>Your trips, earnings and payments</strong></td><td>Fares, the commission, what you handed over and what we paid you, so both sides can see the balance.</td></tr></tbody></table></div>
+<p><strong>Maps.</strong> The maps in Fam Ride come from <strong>Google Maps</strong> (or, where we have not switched Google Maps on, from <strong>OpenFreeMap</strong>). To show a map, your phone loads it from that service's servers, which see your network (IP) address and the area on screen, and the positions shown on it (for example the pickup, the drop and the driver). Google handles this under the [Google Privacy Policy](https://policies.google.com/privacy). FamTap does not send these services your name or phone number.</p>
+<h4 id="privacy-information-created-when-you-use-the-app">Information created when you use the app</h4>
+<ul><li><strong>Notification address (push token).</strong> A code from Google Firebase Cloud Messaging that lets us alert your phone about new messages and calls when the app is closed. The alert itself carries no message text.</li><li><strong>Pinned messages.</strong> When someone in a chat or group pins a message, our server keeps which message it is, who pinned it and until when (24 hours, 7 or 30 days) - never its content, which stays end-to-end encrypted. Everyone in that chat sees it pinned.</li><li><strong>Online and "last seen".</strong> When the app is open, people you chat with can see that you are online, and when you were last seen, unless you hide it in Settings.</li><li><strong>Technical logs.</strong> Our server records events such as sign-ins, connections and errors, with your account's internal ID. Your network (IP) address is used briefly to limit repeated failed attempts and abuse.</li><li><strong>Kept only on your phone:</strong> your call history, which messages you have read, your appearance settings, and copies of recent chats and media. These are not sent to us.</li></ul>
+<h4 id="privacy-what-we-do-not-collect">What we do not collect</h4>
+<p>We do not track your location in the background: location is used only at the moments described above (sharing a location in a chat, Fam Ride's city check and pickup spot, and a driver's position during a ride). We do not show advertising or use any third-party advertising or analytics tools in the app; the only usage counts we keep are the Fam Ride driver activity described above. We do not sell your information.</p>
+<h3 id="privacy-how-your-information-is-protected">3. How your information is protected</h3>
+<ul><li>Everything sent between the app and our server is encrypted in transit (HTTPS).</li><li><strong>Voice and video calls</strong> are encrypted between the two phones. When a direct connection is not possible, the encrypted call passes through a relay that cannot read it.</li><li><strong>Messages, attachments, locations, status updates, screen sharing and the Remote control camera picture are end-to-end encrypted.</strong> They are encrypted on your phone and can only be decrypted on the phones of the people you send them to. Our server stores and delivers the encrypted data but cannot read it, and neither can we.</li><li>The private key that decrypts your messages is created on your phone and never leaves it. <strong>If you change phone or reinstall the app, messages sent to your old phone cannot be shown on the new one.</strong> We cannot recover them for you.</li><li>You can compare the <strong>security code</strong> shown in a chat with the other person. If both phones show the same code, nobody is in between.</li><li>What we can still see: your phone number, name and "About" line, who you message or call and when, and the size of what you send.</li><li>This encryption uses standard, widely used methods (ECDH P-256, AES-256-GCM), but it has not yet been reviewed by an independent security auditor, and it does not yet protect past messages if a phone's key is later stolen (no "forward secrecy").</li><li>You sign in with a code sent by SMS; there is no password to steal. Signing in on a new phone signs your old phone out, and it is told why.</li><li>App data is excluded from phone backups, so your sign-in does not get copied into cloud backups.</li><li>Our server limits how fast any account can send messages, ring other phones or open connections, to protect people from spam and abuse.</li></ul>
+<p>No system is perfectly secure. If we learn of a breach affecting your information, we will tell you.</p>
+<h3 id="privacy-who-we-share-information-with">4. Who we share information with</h3>
+<p>We share information only with the services needed to run the app:</p>
+<div class="table"><table><thead><tr><th>Service</th><th>What they receive</th><th>Why</th></tr></thead><tbody><tr><td><strong>Google Firebase</strong> (Google LLC)</td><td>Your phone number, your notification address, and device and network information</td><td>To send the sign-in SMS, check that requests come from a genuine copy of the app, and deliver notifications</td></tr><tr><td><strong>Railway</strong> (Railway Corp.)</td><td>Everything stored on our server</td><td>They host the server</td></tr><tr><td><strong>Metered</strong> (metered.ca)</td><td>Encrypted call data and network addresses, only when a call cannot connect directly</td><td>To relay the call</td></tr><tr><td><strong>Your phone's speech service</strong> (usually Google)</td><td>Your voice while you hold the Push to talk button, or tap the mic in a chat, in Fam Ride or next to a status caption; and, when you tap 🔊 on a status, the caption's text, read aloud by your phone's text-to-speech (usually on the phone itself)</td><td>To turn your words into text, and text into speech</td></tr><tr><td><strong>Google Maps</strong> (Google LLC) or <strong>OpenFreeMap</strong> (openfreemap.org)</td><td>Your network address, the map area on screen and the places shown on it, when a Fam Ride map is shown</td><td>To draw the map</td></tr><tr><td><strong>Your Fam Ride driver or rider</strong></td><td>The rider's name, pickup place and directions (and, if you book for someone else, their name and phone number) go to the driver who accepts the ride; the driver's name, photo, vehicle, driver code, rating and live position go to the rider and their family (and the driver's name, vehicle, plate, rating and live position to anyone the rider sends the ride's live location link to). Riders and drivers call each other inside FamTap, so their phone numbers are not shown to each other</td><td>So the ride can happen safely</td></tr><tr><td><strong>Fam Ride's partners</strong> (who run Fam Ride with us)</td><td>A driver's application: name, phone number, vehicle, vehicle and licence numbers, and document photos (a partner may also add a document photo for a driver who cannot); and each driver's activity (online time, rides and fares, how they answered requests, ratings, problems, and riders' reasons for cancelling their rides)</td><td>To approve drivers - every partner must approve before someone can drive - and to help drivers and improve the service</td></tr><tr><td><strong>Our bank</strong> (IDFC FIRST Bank)</td><td>Fares paid by QR arrive in Fam Ride's account; we pay drivers' shares from it</td><td>To receive and pay out fares</td></tr></tbody></table></div>
+<p>These companies may process information in countries other than yours. We may also disclose information if the law requires it.</p>
+<p>When you share a photo, video, document, voice note or message to another app (Share), it goes to the app you choose, and that app's own policy applies.</p>
+<p>Other people on the app see what you would expect: people you chat with see your messages, your phone number, your profile photo, your "About" line, your online status and last seen (unless hidden), your status updates, and, if they have not saved your number, the name you chose.</p>
+<h3 id="privacy-how-long-we-keep-information">5. How long we keep information</h3>
+<div class="table"><table><thead><tr><th>Information</th><th>Kept for</th></tr></thead><tbody><tr><td>Account (phone number, name, About)</td><td>Until you delete your account</td></tr><tr><td>Text messages</td><td>Until you delete your account, or the other person in that chat deletes theirs</td></tr><tr><td>Photos, videos, voice notes and documents</td><td>Removed from our server once every recipient has downloaded them, or after 14 days at most</td></tr><tr><td>Status updates</td><td>24 hours</td></tr><tr><td>Profile photo and group photos</td><td>Until you remove or change them, or delete your account (a group photo: until it is changed or removed, or the group ends)</td></tr><tr><td>Contacts sent for matching</td><td>Not stored</td></tr><tr><td>Screen-sharing pictures and Remote control camera pictures</td><td>Not stored</td></tr><tr><td>Fam Ride city check (approximate position)</td><td>Not stored</td></tr><tr><td>Fam Ride trips (places, times, fare, driver, payment)</td><td>Kept for our accounts and for complaints. When you delete your account, your trips stay only as records of a fare (places, date, amount, how it was paid) without your name, phone number, pickup spot, directions, passenger details or chat</td></tr><tr><td>Ride chat (messages and shared locations), pickup spot, cancellation reason and extra fare</td><td>With the trip, until either person's account is deleted</td></tr><tr><td>Ride chat voice messages</td><td>Deleted when the ride ends or is given back</td></tr><tr><td>A driver's latest position while online</td><td>Deleted when they go offline, stop being a driver, or delete their account</td></tr><tr><td>Driver activity (online time, answers to requests, features used, problems)</td><td>60 days</td></tr><tr><td>"No driver found" records (time, pickup rounded to about 100 m, vehicle)</td><td>60 days</td></tr><tr><td>Driver documents, vehicle details and UPI ID</td><td>Until the driver deletes their account</td></tr><tr><td>Driver payments and payouts</td><td>Kept for our accounts, as the law requires</td></tr><tr><td>Pinned messages (which message, who, until when)</td><td>Until unpinned, or 30 days at most</td></tr><tr><td>First-ride offer: the one-way code from a deleted account's phone number</td><td>Kept after account deletion (only for accounts that had finished a ride), so the offer is used once per number</td></tr><tr><td>Reports</td><td>Kept after account deletion, as a safety record</td></tr><tr><td>Technical logs</td><td>For a limited period, by our hosting provider</td></tr></tbody></table></div>
+<h3 id="delete-account">6. Deleting your account and data</h3>
+<p>You can delete your account at any time in the app: <strong>Settings → Delete my account</strong>.</p>
+<p>This permanently deletes your account, your one-to-one chats and their messages and media (for you and for the other person), the messages and media you sent in groups, your status updates, your profile photo, your group memberships, and your block list. For Fam Ride it also deletes your saved places, and, if you drive, your driver profile and all your document photos; a ride still in progress is cancelled. Finished trips stay only as fare records without your personal details (see section 5); if you had finished a ride, a one-way code made from your phone number is kept so the first-ride offer is not given twice (see section 5). It cannot be undone.</p>
+<p><strong>If you cannot use the app,</strong> email <a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a> from any address with the subject "Delete my FamTap account" and tell us the phone number of the account. We will confirm it is yours and delete it within 30 days.</p>
+<p>Logging out (<strong>Settings → Log out</strong>) is different: it removes chats saved on your phone and signs you out, but keeps your account.</p>
+<h3 id="privacy-your-choices">7. Your choices</h3>
+<ul><li>You can refuse or withdraw any permission in your phone's Settings. Calls need the microphone; finding friends needs contacts; the rest of the app keeps working.</li><li>You can hide your "last seen" in Settings.</li><li>You can block or report anyone from the chat with them.</li><li>You can ask us for a copy of the information we hold about you, or ask us to correct it, at <a href="mailto:famtap.help@gmail.com.">famtap.help@gmail.com.</a></li></ul>
+<h3 id="privacy-children">8. Children</h3>
+<p>FamTap is not intended for children under 13, and we do not knowingly collect information from them. In India, people under 18 should use the app only with the consent of a parent or guardian. If you believe a child has given us information without that consent, contact us and we will delete it.</p>
+<h3 id="privacy-changes-to-this-policy">9. Changes to this policy</h3>
+<p>If we change this policy, we will update the date at the top and, for significant changes, tell you in the app.</p>
+<h3 id="privacy-contact-and-complaints">10. Contact and complaints</h3>
+<p>Questions, requests or complaints: <strong><a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a></strong><br>Grievance officer: Abhinav Kumar, <a href="mailto:famtap.help@gmail.com.">famtap.help@gmail.com.</a> We aim to reply within 15 days.</p>
+</section>
+<section id="terms">
+<h2 id="terms-terms-of-use">Terms of Use</h2>
+<p><strong>App:</strong> FamTap<br><strong>Provided by:</strong> Abhinav Kumar, Bengaluru, India<br><strong>Contact:</strong> <a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a><br><strong>Version:</strong> 2026-11 · <strong>Effective date:</strong> 17 November 2026</p>
+<p>By creating an account or using FamTap you agree to these terms. If you do not agree, do not use the app.</p>
+<h3 id="terms-who-can-use-the-app">1. Who can use the app</h3>
+<ul><li>You must be at least 13 years old. If you are under 18, you need the consent of a parent or guardian.</li><li>You must sign up with a phone number that is yours. One account is for one person.</li><li>You are responsible for what happens on your account. Tell us at once if you think someone else is using it.</li></ul>
+<h3 id="terms-what-you-must-not-do">2. What you must not do</h3>
+<p>You must not use FamTap to send, share or do any of the following:</p>
+<ul><li><strong>Illegal content or activity</strong>, including content that sexually exploits or endangers children. We report such content to the authorities.</li><li><strong>Harassment, threats, bullying or hate</strong> directed at any person or group.</li><li><strong>Sexually explicit or violent content</strong> sent to someone who has not asked for it.</li><li><strong>Fraud and scams</strong>, including asking people for one-time passwords (OTPs), bank details, card numbers or money under false pretences.</li><li><strong>Impersonation</strong>: pretending to be another person, a company, a bank or an official.</li><li><strong>Spam</strong>: bulk or repeated unwanted messages or calls.</li><li><strong>Other people's private information</strong> shared without their permission.</li><li><strong>Misuse of remote control</strong>: getting access to someone's phone by deceiving or pressuring them, or using that access for anything they did not agree to.</li><li><strong>Attacks on the service</strong>: trying to break, overload, copy or get around the security of the app or its servers, or using automated tools to create accounts or collect information.</li></ul>
+<p>We have <strong>no tolerance</strong> for this content or behaviour.</p>
+<h3 id="terms-reporting-and-blocking">3. Reporting and blocking</h3>
+<ul><li>You can <strong>block</strong> anyone from the chat with them. They can no longer message or call you.</li><li>You can <strong>report</strong> anyone from the chat with them. Your report, the reason and the last 5 messages they sent you in that chat are sent to us from your phone. Because messages are end-to-end encrypted, this is the only time we can read any message.</li><li>We review reports and act on them. We may remove content, suspend an account or close it permanently, without notice, if we believe these terms have been broken. We may also refuse a new account to someone whose account was closed.</li><li>We aim to review reports within 24 hours.</li></ul>
+<h3 id="terms-remote-control-and-screen-sharing">4. Remote control and screen sharing</h3>
+<p>FamTap lets you allow another person to see your screen and tap it for you.</p>
+<ul><li>Use this <strong>only with people you know and trust</strong>. Whoever you allow can see everything on your screen while the session lasts, including messages, banking apps and anything you type.</li><li><strong>Never</strong> start a session because someone you do not know asked you to, whatever they say they are: a bank, the police, a delivery company, customer support or anyone else. Real organisations do not ask for this.</li><li><strong>Never share an OTP or password</strong> with anyone during a session.</li><li>You can stop a session at any time. It also ends when your screen turns off.</li><li>You are responsible for whom you allow and what you do while helping someone else.</li></ul>
+<h3 id="terms-not-for-emergencies">5. Not for emergencies</h3>
+<p>FamTap cannot call emergency numbers such as 112, 100, 101 or 108. In an emergency, use your phone's own dialler.</p>
+<h3 id="terms-your-content">6. Your content</h3>
+<p>Your messages, photos and voice notes belong to you. You give us permission to store and deliver them, in encrypted form, so the app can work. We do not use them for advertising. How we handle your information is described in the Privacy Policy.</p>
+<h3 id="terms-maps-google-maps">7. Maps (Google Maps)</h3>
+<p>Fam Ride may show maps from <strong>Google Maps</strong>. Your use of Google Maps features and content in FamTap is subject to the current [Google Maps/Google Earth Additional Terms of Service](https://maps.google.com/help/terms_maps/) and the [Google Privacy Policy](https://policies.google.com/privacy).</p>
+<h4 id="terms-fam-ride-offers">Fam Ride offers</h4>
+<p>Fam Ride may offer discounts, such as a free first ride up to an amount. The conditions are shown in the app when you book (for example: one per person and phone number, for your first finished ride, within a number of days after you sign up). Any part of a fare above the offer is yours to pay; any unused part of the offer is not kept. We may change or end an offer at any time; a ride already booked keeps its offer. Misusing an offer (for example with several accounts) may cancel it.</p>
+<h3 id="terms-availability">8. Availability</h3>
+<p>We try to keep FamTap working, but it is provided "as is". It may be interrupted, changed or stopped. Messages or calls may fail or be delayed. Do not rely on it as your only way to reach someone.</p>
+<h3 id="terms-liability">9. Liability</h3>
+<p>To the extent the law allows, we are not responsible for losses caused by other users' actions, by your use of remote control, by interruptions to the service, or by things outside our control. Nothing in these terms limits rights you have under consumer law that cannot be limited.</p>
+<h3 id="terms-ending-your-account">10. Ending your account</h3>
+<p>You can delete your account at any time in <strong>Settings → Delete my account</strong>. We may suspend or close an account that breaks these terms.</p>
+<h3 id="terms-changes">11. Changes</h3>
+<p>We may update these terms. If the changes are significant we will tell you in the app, and you may be asked to agree again before continuing.</p>
+<h3 id="terms-law">12. Law</h3>
+<p>These terms are governed by the laws of India. Disputes are subject to the courts of Bengaluru, Karnataka.</p>
+<h3 id="terms-contact">13. Contact</h3>
+<p><a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a></p>
+</section>
 </main>
-
-<footer>
-  <div class="wrap">
-    <div>
-      <b style="color:#fff">Fam Ride</b> is Fam Ride, a service inside the FamTap app.<br>
-      Contact: <a href="mailto:famtap.help@gmail.com">famtap.help@gmail.com</a>
-    </div>
-    <nav aria-label="Legal">
-      <a href="../">FamTap</a>
-      <a href="../#privacy">Privacy Policy</a>
-      <a href="../#terms">Terms of Use</a>
-      <a href="../#delete-account">Delete your account</a>
-    </nav>
-  </div>
-</footer>
 </body>
 </html>
